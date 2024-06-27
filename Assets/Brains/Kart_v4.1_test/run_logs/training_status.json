@@ -1,0 +1,29 @@
+{
+    "MarioKartRL": {
+        "checkpoints": [
+            {
+                "steps": 153444,
+                "file_path": "Assets/Brains\\Kart_v4.1_test\\MarioKartRL\\MarioKartRL-153444.onnx",
+                "reward": 18.369096937932465,
+                "creation_time": 1719483874.489638,
+                "auxillary_file_paths": [
+                    "Assets/Brains\\Kart_v4.1_test\\MarioKartRL\\MarioKartRL-153444.pt"
+                ]
+            }
+        ],
+        "final_checkpoint": {
+            "steps": 153444,
+            "file_path": "Assets/Brains\\Kart_v4.1_test\\MarioKartRL.onnx",
+            "reward": 18.369096937932465,
+            "creation_time": 1719483874.489638,
+            "auxillary_file_paths": [
+                "Assets/Brains\\Kart_v4.1_test\\MarioKartRL\\MarioKartRL-153444.pt"
+            ]
+        }
+    },
+    "metadata": {
+        "stats_format_version": "0.3.0",
+        "mlagents_version": "1.0.0",
+        "torch_version": "2.3.1+cu121"
+    }
+}

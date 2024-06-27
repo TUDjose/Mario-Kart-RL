@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.IO;
+using Unity.Collections;
 using UnityEngine;
 using Unity.MLAgents;
 using Unity.MLAgents.Actuators;
@@ -24,8 +25,10 @@ public class KartAgent : Agent
     public bool inference;
 
     public int LAP_TIME = 100_000;
-    
+    public int numCheckpoints = 0;
 
+    public Lesson lesson;
+    
     protected override void Awake()
     {
         inference = false;
@@ -59,17 +62,19 @@ public class KartAgent : Agent
     {
         if (e.kartT == transform)
         {
-            AddReward(.1f);
+            numCheckpoints++;
+            AddReward(lesson.checkpointReward);
             if (e.final)
             {
-                AddReward(1f);
+                AddReward(lesson.finishReward);
 
                 TrainingManager tm = GameObject.FindWithTag("Manager").GetComponent<TrainingManager>();
                 
                 if (e.numSteps <= tm.BestLapTime)
                 {
                     tm.BestLapTime = e.numSteps;
-                    AddReward(5f);
+                    File.AppendAllText("times.txt", "\n" + tm.BestLapTime);
+                    AddReward(lesson.bestTimeReward);
                 }
                 
                 EndEpisode();
@@ -80,7 +85,7 @@ public class KartAgent : Agent
     {
         if (e.kartT == transform)
         {
-            AddReward(-1f);
+            AddReward(lesson.wrongCheckpointReward);
             EndEpisode();
         }
     }
@@ -89,7 +94,7 @@ public class KartAgent : Agent
     {
         if (e.kartT == transform)
         {
-            AddReward(-.5f);
+            AddReward(lesson.hitBarrierReward);
 
             if (inference) Destroy(gameObject);
             else EndEpisode();
@@ -100,18 +105,18 @@ public class KartAgent : Agent
     {
         if (e.kartT == transform)
         {
-            AddReward(-1f);
+            AddReward(lesson.hitObstacleReward);
             EndEpisode();
         }
     }
     
     public override void OnEpisodeBegin()
     {
+        kartController.StopKart();
         transform.position = spawnPoint.position + new Vector3(Random.Range(-5f, 5f), 0, Random.Range(-4f, 4f));
         transform.forward = spawnPoint.forward;
-        kartController.StopKart();
+        numCheckpoints = 0;
         trackCheckpoints.ResetCheckpoints(transform);
-        trackObstacles.MoveObstacle();
     }
     
     public override void CollectObservations(VectorSensor sensor)
@@ -122,8 +127,8 @@ public class KartAgent : Agent
         
         sensor.AddObservation(kartController.realSpeed);
 
-        AddReward((kartController.realSpeed - 30f)/4000);      // reward high speeds and punish low ones
-        AddReward(-0.002f);     // existence punishment to speed up kart
+        if(lesson.speedReward) AddReward((kartController.realSpeed - 15)/4000);      
+        AddReward(lesson.existenceReward);   
     }
     
     public override void OnActionReceived(ActionBuffers actions)
@@ -134,7 +139,7 @@ public class KartAgent : Agent
         switch (actions.DiscreteActions[0])
         {
             case 0: forwardAmount = -1f;
-                //AddReward(-0.1f);
+                AddReward(lesson.reverseReward);
                 break;
             case 1: forwardAmount = 0f; 
                 break;
@@ -158,21 +163,17 @@ public class KartAgent : Agent
     public override void Heuristic(in ActionBuffers actionOut)
     {
         var action = actionOut.DiscreteActions;
-        action[0] = (int) Input.GetAxisRaw("Vertical") + 1;
+        
+        if (Input.GetKey(KeyCode.Space))
+        {
+            action[0] = 1;
+        }
+        else
+        {
+            action[0] = (int)Input.GetAxisRaw("Vertical") + 1;
+        }
+        
         action[1] = (int)Input.GetAxisRaw("Horizontal") + 1;
     }
-
-    // public void ClickChangeBehaviourToInference()
-    // {
-    //     inference = !inference;
-    //     BehaviorType behaviour = inference ? BehaviorType.InferenceOnly : BehaviorType.Default;
-    //     
-    //     foreach (Transform kart in trackCheckpoints.kartTransformList)
-    //     {
-    //         kart.GetComponent<KartAgent>().inference = inference;
-    //         BehaviorParameters behaviorParameters = kart.GetComponent<BehaviorParameters>();
-    //         behaviorParameters.BehaviorType = behaviour;
-    //     }
-    // }
     
 }

@@ -48,8 +48,9 @@ public class TrackCheckpoints : MonoBehaviour
         int nextCheckpointIndex = nextCheckpointIndexList[idx];
         KartAgent agent = kartTransform.GetComponent<KartAgent>();
         
-        if (nextCheckpointIndex == 0 && agent.StepCount > 700)
+        if (nextCheckpointIndex == 0 && agent.numCheckpoints == checkpointsList.Count)
         {
+            // Debug.Log("Finished");
             OnCorrectCheckpoint?.Invoke(this, new OnKartThroughCheckpointArgs
             {
                 kartT = kartTransform,

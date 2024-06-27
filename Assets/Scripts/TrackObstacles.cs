@@ -26,17 +26,23 @@ public class TrackObstacles : MonoBehaviour
     public void KartHit(Transform kart)
     {
         OnHitObstacle?.Invoke(this, new OnHitObstacleArgs{kartT = kart});
-        
-        
-
     }
 
-    public void MoveObstacle()// Temporary, only works for single obstacle!!
+    public void SpawnObstacles()
     {
-        // foreach (Transform obstacle in obstacles)
-        // {
-        //     obstacle.position = obstacles.position +
-        //                         new Vector3(Random.Range(-4f, 4f), 0f, Random.Range(50f, -35f));
-        // }
+        foreach (Transform obstacle in obstacles)
+        {
+            obstacle.GetComponent<MeshRenderer>().enabled = true;
+            obstacle.GetComponent<MeshCollider>().enabled = true;
+        }
     }
+
+    // public void MoveObstacle()
+    // {
+    //     foreach (Transform obstacle in obstacles)
+    //     {
+    //         obstacle.position = obstacles.position +
+    //                             new Vector3(Random.Range(-4f, 4f), 0f, Random.Range(50f, -35f));
+    //     }
+    // }
 }

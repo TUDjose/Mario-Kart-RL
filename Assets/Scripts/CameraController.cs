@@ -7,7 +7,7 @@ public class CameraController : MonoBehaviour
     public Transform kart;
     public Transform target;
     public Vector3 offset = new Vector3(-5f, 5f, 0f);
-    private bool trackKart = false;
+    public bool trackKart = false;
     
     void FixedUpdate()
     {

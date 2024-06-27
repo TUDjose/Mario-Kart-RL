@@ -1,0 +1,110 @@
+{
+    "MarioKartRL": {
+        "checkpoints": [
+            {
+                "steps": 15099348,
+                "file_path": "Assets/Brains\\Kart_v4\\MarioKartRL\\MarioKartRL-15099348.onnx",
+                "reward": 15.24609370955399,
+                "creation_time": 1719428355.081223,
+                "auxillary_file_paths": [
+                    "Assets/Brains\\Kart_v4\\MarioKartRL\\MarioKartRL-15099348.pt"
+                ]
+            },
+            {
+                "steps": 15199824,
+                "file_path": "Assets/Brains\\Kart_v4\\MarioKartRL\\MarioKartRL-15199824.onnx",
+                "reward": 15.094023754722194,
+                "creation_time": 1719428433.4992018,
+                "auxillary_file_paths": [
+                    "Assets/Brains\\Kart_v4\\MarioKartRL\\MarioKartRL-15199824.pt"
+                ]
+            },
+            {
+                "steps": 15299385,
+                "file_path": "Assets/Brains\\Kart_v4\\MarioKartRL\\MarioKartRL-15299385.onnx",
+                "reward": 16.88228399103338,
+                "creation_time": 1719428509.2792509,
+                "auxillary_file_paths": [
+                    "Assets/Brains\\Kart_v4\\MarioKartRL\\MarioKartRL-15299385.pt"
+                ]
+            },
+            {
+                "steps": 15399826,
+                "file_path": "Assets/Brains\\Kart_v4\\MarioKartRL\\MarioKartRL-15399826.onnx",
+                "reward": 16.473468086936258,
+                "creation_time": 1719428587.956775,
+                "auxillary_file_paths": [
+                    "Assets/Brains\\Kart_v4\\MarioKartRL\\MarioKartRL-15399826.pt"
+                ]
+            },
+            {
+                "steps": 15499681,
+                "file_path": "Assets/Brains\\Kart_v4\\MarioKartRL\\MarioKartRL-15499681.onnx",
+                "reward": 15.180761814117432,
+                "creation_time": 1719428665.7474933,
+                "auxillary_file_paths": [
+                    "Assets/Brains\\Kart_v4\\MarioKartRL\\MarioKartRL-15499681.pt"
+                ]
+            },
+            {
+                "steps": 15599775,
+                "file_path": "Assets/Brains\\Kart_v4\\MarioKartRL\\MarioKartRL-15599775.onnx",
+                "reward": 15.496051168441772,
+                "creation_time": 1719428743.518502,
+                "auxillary_file_paths": [
+                    "Assets/Brains\\Kart_v4\\MarioKartRL\\MarioKartRL-15599775.pt"
+                ]
+            },
+            {
+                "steps": 15699588,
+                "file_path": "Assets/Brains\\Kart_v4\\MarioKartRL\\MarioKartRL-15699588.onnx",
+                "reward": 16.481330341762966,
+                "creation_time": 1719428822.4849706,
+                "auxillary_file_paths": [
+                    "Assets/Brains\\Kart_v4\\MarioKartRL\\MarioKartRL-15699588.pt"
+                ]
+            },
+            {
+                "steps": 15799950,
+                "file_path": "Assets/Brains\\Kart_v4\\MarioKartRL\\MarioKartRL-15799950.onnx",
+                "reward": 16.533725261688232,
+                "creation_time": 1719428902.866268,
+                "auxillary_file_paths": [
+                    "Assets/Brains\\Kart_v4\\MarioKartRL\\MarioKartRL-15799950.pt"
+                ]
+            },
+            {
+                "steps": 15899046,
+                "file_path": "Assets/Brains\\Kart_v4\\MarioKartRL\\MarioKartRL-15899046.onnx",
+                "reward": 16.527936935424805,
+                "creation_time": 1719428980.9207394,
+                "auxillary_file_paths": [
+                    "Assets/Brains\\Kart_v4\\MarioKartRL\\MarioKartRL-15899046.pt"
+                ]
+            },
+            {
+                "steps": 15935009,
+                "file_path": "Assets/Brains\\Kart_v4\\MarioKartRL\\MarioKartRL-15935009.onnx",
+                "reward": 16.65828076998393,
+                "creation_time": 1719429000.8726666,
+                "auxillary_file_paths": [
+                    "Assets/Brains\\Kart_v4\\MarioKartRL\\MarioKartRL-15935009.pt"
+                ]
+            }
+        ],
+        "final_checkpoint": {
+            "steps": 15935009,
+            "file_path": "Assets/Brains\\Kart_v4\\MarioKartRL.onnx",
+            "reward": 16.65828076998393,
+            "creation_time": 1719429000.8726666,
+            "auxillary_file_paths": [
+                "Assets/Brains\\Kart_v4\\MarioKartRL\\MarioKartRL-15935009.pt"
+            ]
+        }
+    },
+    "metadata": {
+        "stats_format_version": "0.3.0",
+        "mlagents_version": "1.0.0",
+        "torch_version": "2.3.1+cu121"
+    }
+}

@@ -75,7 +75,9 @@ public class KartController: MonoBehaviour
       }
       else
       {
-         currentSpeed = Mathf.Lerp(currentSpeed, 0, Time.deltaTime * 1.5f);
+         float decceleration = 1.5f;
+         // if (Input.GetKey(KeyCode.Space)) decceleration = 5f;
+         currentSpeed = Mathf.Lerp(currentSpeed, 0, Time.deltaTime * decceleration);
       }
       
    
@@ -88,9 +90,10 @@ public class KartController: MonoBehaviour
    {
       steerAmount = realSpeed switch
       {
+         float n when n < 5 => inputs[1],
          float n when n > 45 => 45 / steerEffectiveness * inputs[1],
          float n when n > 30 && n < 46 => realSpeed / steerEffectiveness * inputs[1],
-         float n when n < 30 => realSpeed * 1.2f * inputs[1],
+         float n when n < 30 => 35f * inputs[1],
          _ => steerAmount
       };
 
@@ -160,7 +163,10 @@ public class KartController: MonoBehaviour
 
    public void StopKart()
    {
+      rb.isKinematic = true;
       inBoost = false;
+      rb.rotation = Quaternion.Euler(0f, 0f, 0f);
+      rb.isKinematic = false;
       currentSpeed = Mathf.Lerp(currentSpeed, 0, 1f);
       Vector3 vel = transform.forward * currentSpeed;
       vel.y = rb.velocity.y;
