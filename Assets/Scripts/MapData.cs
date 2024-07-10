@@ -2,6 +2,9 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+[RequireComponent(typeof(TrackCheckpoints))]
+[RequireComponent(typeof(TrackBarrier))]
+[RequireComponent(typeof(TrackObstacles))]
 public class MapData : MonoBehaviour
 {
     public TrackCheckpoints Checkpoints;
@@ -22,7 +25,7 @@ public class MapData : MonoBehaviour
                 {
                     if (offroad.gameObject.CompareTag("Grass"))
                     {
-                        offroad.GetComponent<MeshRenderer>().enabled = true;
+                        //offroad.GetComponent<MeshRenderer>().enabled = true;
                         offroad.GetComponent<MeshCollider>().enabled = true;
                     }
                 }
@@ -32,7 +35,7 @@ public class MapData : MonoBehaviour
                 {
                     if (speed.gameObject.CompareTag("Speed"))
                     {
-                        speed.GetComponent<MeshRenderer>().enabled = true;
+                        //speed.GetComponent<MeshRenderer>().enabled = true;
                         speed.GetComponent<MeshCollider>().enabled = true;
                     }
                 }

@@ -128,7 +128,7 @@ public class KartAgent : Agent
         sensor.AddObservation(kartController.realSpeed);
 
         if(lesson.speedReward) AddReward((kartController.realSpeed - 15)/4000);      
-        AddReward(lesson.existenceReward);   
+        AddReward(lesson.existenceReward);
     }
     
     public override void OnActionReceived(ActionBuffers actions)

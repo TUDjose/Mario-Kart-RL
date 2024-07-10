@@ -32,7 +32,7 @@ public class TrackObstacles : MonoBehaviour
     {
         foreach (Transform obstacle in obstacles)
         {
-            obstacle.GetComponent<MeshRenderer>().enabled = true;
+            // obstacle.GetComponent<MeshRenderer>().enabled = true;
             obstacle.GetComponent<MeshCollider>().enabled = true;
         }
     }

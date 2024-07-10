@@ -541,6 +541,7 @@ MonoBehaviour:
   realSpeed: 0
   maxSpeed: 40
   acceleration: 3
+  boostTime: 1
   steerAmount: 0
   steerEffectiveness: 2
   touchingGround: 0
@@ -604,6 +605,8 @@ MonoBehaviour:
   mapData: {fileID: 0}
   inference: 0
   LAP_TIME: 100000
+  numCheckpoints: 0
+  lesson: {fileID: 0}
 --- !u!114 &6189060460195739224
 MonoBehaviour:
   m_ObjectHideFlags: 0

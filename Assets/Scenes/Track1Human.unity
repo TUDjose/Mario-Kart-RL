@@ -700,6 +700,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   BestLapTime: 100000
+  Curriculum: []
+  ApplyCurriculum: 0
+  currLesson: 0
 --- !u!1 &1021455701
 GameObject:
   m_ObjectHideFlags: 0
@@ -15937,6 +15940,7 @@ MonoBehaviour:
   Barriers: {fileID: 2128431051949778239}
   Obstacles: {fileID: 8820473582455821564}
   Spawn: {fileID: 6499870632829071685}
+  Track: {fileID: 0}
 --- !u!64 &7454636373590271011
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -16708,6 +16712,7 @@ MonoBehaviour:
   inference: 0
   LAP_TIME: 100000
   numCheckpoints: 0
+  lesson: {fileID: 11400000, guid: a9b74c43c275afd4d83bb83b9df4d4f9, type: 2}
 --- !u!1 &7781642290987687474
 GameObject:
   m_ObjectHideFlags: 0

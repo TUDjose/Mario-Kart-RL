@@ -27,7 +27,7 @@ public class TrainingManager : MonoBehaviour
 
         envs = environments.Length;
         
-        if(!ApplyCurriculum) SetLesson(4);
+        if(!ApplyCurriculum) SetLesson(3);
     }
 
     public void HeuristicsTesting()

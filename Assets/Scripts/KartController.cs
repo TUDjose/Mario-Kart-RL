@@ -22,8 +22,6 @@ public class KartController: MonoBehaviour
    [SerializeField] private float boostTime = 1f; 
    private float currentSpeed = 0;
    private bool inBoost;
-
-   
    
    [Header("Steer")] 
    public float steerAmount;
@@ -35,8 +33,7 @@ public class KartController: MonoBehaviour
 
    [Header("Raycasts")]
    [SerializeField] private List<Transform> raycastsPoints;
-
-
+   
 
    private void Start()
    {
