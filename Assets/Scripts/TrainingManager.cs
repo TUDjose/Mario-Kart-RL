@@ -1,8 +1,10 @@
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using Unity.MLAgents;
 using Unity.MLAgents.Policies;
 using UnityEngine;
+using System.IO;
 
 
 public class TrainingManager : MonoBehaviour
@@ -19,8 +21,13 @@ public class TrainingManager : MonoBehaviour
     public bool ApplyCurriculum;
     public int currLesson;
 
+    private string path;
+
     private void Start()
     {
+        path = "MKRL/Analytics/analytics_" + DateTime.Now.ToString("yyyyMMdd_HHmmss") + ".txt";
+        File.WriteAllText(path, "");
+        
         agents = (KartAgent[])FindObjectsOfType(typeof(KartAgent));
         trackCheckpoints = (TrackCheckpoints[])FindObjectsOfType(typeof(TrackCheckpoints));
         environments = (MapData[])FindObjectsOfType(typeof(MapData));
@@ -101,5 +108,11 @@ public class TrainingManager : MonoBehaviour
             }
         }
     }
-    
+
+    public void StoreAnalytics(AnalyticsData data)
+    {
+        
+        File.AppendAllText(path, data.ToCSV());
+    }
 }
+

@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.IO;
+using System.Reflection;
 using Unity.Collections;
 using UnityEngine;
 using Unity.MLAgents;
@@ -77,7 +78,7 @@ public class KartAgent : Agent
                     AddReward(lesson.bestTimeReward);
                 }
                 
-                EndEpisode();
+                CompleteEpisode(true);
             }
         }
     }
@@ -86,7 +87,7 @@ public class KartAgent : Agent
         if (e.kartT == transform)
         {
             AddReward(lesson.wrongCheckpointReward);
-            EndEpisode();
+            CompleteEpisode();
         }
     }
     
@@ -97,7 +98,7 @@ public class KartAgent : Agent
             AddReward(lesson.hitBarrierReward);
 
             if (inference) Destroy(gameObject);
-            else EndEpisode();
+            else CompleteEpisode();
         }
     }
 
@@ -106,7 +107,7 @@ public class KartAgent : Agent
         if (e.kartT == transform)
         {
             AddReward(lesson.hitObstacleReward);
-            EndEpisode();
+            CompleteEpisode();
         }
     }
     
@@ -175,5 +176,22 @@ public class KartAgent : Agent
         
         action[1] = (int)Input.GetAxisRaw("Horizontal") + 1;
     }
-    
+
+    private void CompleteEpisode(bool completed = false)
+    {
+        // create and store analytics data
+        TrainingManager tm = GameObject.FindWithTag("Manager").GetComponent<TrainingManager>();
+        AnalyticsData data = new AnalyticsData()
+        {
+            AgentID = name,
+            FinishedLap = completed,
+            EpisodeLength = StepCount,
+            Reward = GetCumulativeReward(),
+            CurrLesson = tm.Curriculum.IndexOf(lesson)
+        };
+        tm.StoreAnalytics(data);
+        
+        // end episode to reset agent
+        EndEpisode();
+    }
 }
