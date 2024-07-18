@@ -5,7 +5,7 @@ behaviors:
     hyperparameters:
       batch_size: 256
       buffer_size: 102400
-      learning_rate: 0.0003
+      learning_rate: 0.0005
       beta: 0.005
       epsilon: 0.2
       lambd: 0.95
@@ -14,7 +14,7 @@ behaviors:
       learning_rate_schedule: linear
       beta_schedule: linear
       epsilon_schedule: linear
-    checkpoint_interval: 500000
+    checkpoint_interval: 1000000
     network_settings:
       normalize: false
       hidden_units: 128
@@ -36,9 +36,9 @@ behaviors:
           goal_conditioning_type: hyper
           deterministic: false
     init_path: null
-    keep_checkpoints: 5
+    keep_checkpoints: 15
     even_checkpoints: false
-    max_steps: 5000000
+    max_steps: 15000000
     time_horizon: 64
     summary_freq: 50000
     threaded: false
@@ -65,10 +65,10 @@ engine_settings:
   no_graphics: false
 environment_parameters: null
 checkpoint_settings:
-  run_id: Kart_v1
+  run_id: Kart
   initialize_from: null
   load_model: false
-  resume: true
+  resume: false
   force: false
   train_model: false
   inference: false

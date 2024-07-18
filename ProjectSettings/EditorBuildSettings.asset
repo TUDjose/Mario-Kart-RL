@@ -9,7 +9,7 @@ EditorBuildSettings:
     path: Assets/Scenes/StartMenu.unity
     guid: 8e11d8f388f213f488b838a55cfebadf
   - enabled: 1
-    path: Assets/Scenes/Track.unity
+    path: Assets/Scenes/Training.unity
     guid: d39ced6560cec8549b8872b7d7bae41e
   - enabled: 0
     path: Assets/Scenes/1.unity
