@@ -70,7 +70,6 @@ public class KartAgent : Agent
                 if (e.numSteps <= tm.BestLapTime)
                 {
                     tm.BestLapTime = e.numSteps;
-                    File.AppendAllText("times.txt", "\n" + tm.BestLapTime);
                     AddReward(lesson.bestTimeReward);
                 }
                 
