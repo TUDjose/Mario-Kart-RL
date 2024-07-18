@@ -7,7 +7,7 @@ public class StartMenu : MonoBehaviour
 {
     [SerializeField] private Transform kart, figure;
     private List<string> tracks;
-    [SerializeField] private GameObject start, diy, rl;
+    [SerializeField] private GameObject start, diy, rl, leader;
 
     private void Start()
     {
@@ -17,7 +17,8 @@ public class StartMenu : MonoBehaviour
         tracks = new List<string>
         {
             "Track1Human",
-            "Track2Human"
+            "Track2Human",
+            "Track3Human"
         };
     }
 
@@ -54,7 +55,14 @@ public class StartMenu : MonoBehaviour
     {
         diy.SetActive(false);
         rl.SetActive(false);
+        leader.SetActive(false);
         start.SetActive(true);
+    }
+
+    public void ClickLeaderboard()
+    {
+        start.SetActive(false);
+        leader.SetActive(true);
     }
     
 }

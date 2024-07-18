@@ -11,6 +11,7 @@ TagManager:
   - Checkpoint
   - Obstacle
   - Manager
+  - PlayerManager
   layers:
   - Default
   - TransparentFX

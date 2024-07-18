@@ -22,12 +22,17 @@ public class TrackBarrier : MonoBehaviour
         {
             BarrierSingle bs = barrier.GetComponent<BarrierSingle>();
             bs.trackBarrier = this;
-            // barrierList.Add(bs);
         }
     }
 
     public void KartHit(Transform kart)
     {
+        if (kart.GetComponent<KartAgent>().mode == GameMode.Player)
+        {
+            var pm = GameObject.FindWithTag("PlayerManager").GetComponent<PlayerManager>();
+            pm.isTiming = false;
+            pm.InvokeStart();
+        }
         OnHitBarrier?.Invoke(this, new OnHitBarrierArgs{kartT = kart});
     }
     

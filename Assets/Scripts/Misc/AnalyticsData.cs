@@ -8,6 +8,7 @@ public struct AnalyticsData
     public int EpisodeLength;
     public float Reward;
     public int CurrLesson;
+    public int Step;
 
     public string ToCSV()
     {
@@ -15,7 +16,8 @@ public struct AnalyticsData
                FinishedLap + ";" +
                EpisodeLength + ";" +
                Reward.ToString("G") + ";" +
-               CurrLesson +  
+               CurrLesson +  ";" + 
+               Step + 
                "\n";
     }
 }

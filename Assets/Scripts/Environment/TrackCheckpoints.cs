@@ -50,7 +50,6 @@ public class TrackCheckpoints : MonoBehaviour
         
         if (nextCheckpointIndex == 0 && agent.numCheckpoints == checkpointsList.Count)
         {
-            // Debug.Log("Finished");
             OnCorrectCheckpoint?.Invoke(this, new OnKartThroughCheckpointArgs
             {
                 kartT = kartTransform,

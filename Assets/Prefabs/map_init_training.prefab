@@ -100,7 +100,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -219,7 +219,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -356,6 +356,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 17a68ff7ad1f9704a9e451aced358a2d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ignore: 0
 --- !u!1 &145072621529205563
 GameObject:
   m_ObjectHideFlags: 0
@@ -474,6 +475,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 17a68ff7ad1f9704a9e451aced358a2d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ignore: 0
 --- !u!1 &225253643815314150
 GameObject:
   m_ObjectHideFlags: 0
@@ -700,6 +702,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 17a68ff7ad1f9704a9e451aced358a2d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ignore: 0
 --- !u!1 &389919555795028711
 GameObject:
   m_ObjectHideFlags: 0
@@ -800,7 +803,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -937,6 +940,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 17a68ff7ad1f9704a9e451aced358a2d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ignore: 0
 --- !u!1 &452100770264985897
 GameObject:
   m_ObjectHideFlags: 0
@@ -1037,7 +1041,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -1174,6 +1178,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 17a68ff7ad1f9704a9e451aced358a2d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ignore: 0
 --- !u!1 &635960757635825519
 GameObject:
   m_ObjectHideFlags: 0
@@ -1307,7 +1312,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -1426,7 +1431,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -1545,7 +1550,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -1664,7 +1669,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -1801,6 +1806,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 17a68ff7ad1f9704a9e451aced358a2d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ignore: 0
 --- !u!1 &1004532976549219374
 GameObject:
   m_ObjectHideFlags: 0
@@ -2009,7 +2015,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -2128,7 +2134,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -2265,6 +2271,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 17a68ff7ad1f9704a9e451aced358a2d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ignore: 0
 --- !u!1 &1250121989269999654
 GameObject:
   m_ObjectHideFlags: 0
@@ -2365,7 +2372,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -2484,7 +2491,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -2621,6 +2628,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 17a68ff7ad1f9704a9e451aced358a2d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ignore: 0
 --- !u!1 &1359624490014358630
 GameObject:
   m_ObjectHideFlags: 0
@@ -2739,6 +2747,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 17a68ff7ad1f9704a9e451aced358a2d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ignore: 0
 --- !u!1 &1394995000956235944
 GameObject:
   m_ObjectHideFlags: 0
@@ -2857,6 +2866,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 17a68ff7ad1f9704a9e451aced358a2d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ignore: 0
 --- !u!1 &1446438207598178350
 GameObject:
   m_ObjectHideFlags: 0
@@ -2955,6 +2965,7 @@ MonoBehaviour:
   Barriers: {fileID: 3449862997535716968}
   Obstacles: {fileID: 5970882684386939615}
   Spawn: {fileID: 2026328731374770669}
+  Track: {fileID: 0}
 --- !u!1 &1484739625704346514
 GameObject:
   m_ObjectHideFlags: 0
@@ -3181,6 +3192,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 17a68ff7ad1f9704a9e451aced358a2d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ignore: 0
 --- !u!1 &1558653081011340567
 GameObject:
   m_ObjectHideFlags: 0
@@ -3299,6 +3311,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 17a68ff7ad1f9704a9e451aced358a2d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ignore: 0
 --- !u!1 &1703612983761745037
 GameObject:
   m_ObjectHideFlags: 0
@@ -3399,7 +3412,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -3518,7 +3531,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -3637,7 +3650,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -3756,7 +3769,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -3875,7 +3888,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -4102,7 +4115,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -4221,7 +4234,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -4358,6 +4371,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 17a68ff7ad1f9704a9e451aced358a2d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ignore: 0
 --- !u!1 &1981105072683843449
 GameObject:
   m_ObjectHideFlags: 0
@@ -4476,6 +4490,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 17a68ff7ad1f9704a9e451aced358a2d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ignore: 0
 --- !u!1 &1981458237136638490
 GameObject:
   m_ObjectHideFlags: 0
@@ -4576,7 +4591,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -4695,7 +4710,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -4922,7 +4937,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -5059,6 +5074,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 17a68ff7ad1f9704a9e451aced358a2d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ignore: 0
 --- !u!1 &2170265560706456028
 GameObject:
   m_ObjectHideFlags: 0
@@ -5404,6 +5420,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 17a68ff7ad1f9704a9e451aced358a2d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ignore: 0
 --- !u!1 &2360361038945148425
 GameObject:
   m_ObjectHideFlags: 0
@@ -5522,6 +5539,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 17a68ff7ad1f9704a9e451aced358a2d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ignore: 0
 --- !u!1 &2470260441879478319
 GameObject:
   m_ObjectHideFlags: 0
@@ -5653,7 +5671,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -5790,6 +5808,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 17a68ff7ad1f9704a9e451aced358a2d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ignore: 0
 --- !u!1 &2661609501450792823
 GameObject:
   m_ObjectHideFlags: 0
@@ -5940,6 +5959,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 17a68ff7ad1f9704a9e451aced358a2d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ignore: 0
 --- !u!1 &2729761072451013631
 GameObject:
   m_ObjectHideFlags: 0
@@ -6058,6 +6078,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 17a68ff7ad1f9704a9e451aced358a2d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ignore: 0
 --- !u!1 &2798500051046692328
 GameObject:
   m_ObjectHideFlags: 0
@@ -6176,6 +6197,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 17a68ff7ad1f9704a9e451aced358a2d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ignore: 0
 --- !u!1 &2886624264252860510
 GameObject:
   m_ObjectHideFlags: 0
@@ -6294,6 +6316,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 17a68ff7ad1f9704a9e451aced358a2d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ignore: 0
 --- !u!1 &3044000861004509111
 GameObject:
   m_ObjectHideFlags: 0
@@ -6394,7 +6417,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -6531,6 +6554,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 17a68ff7ad1f9704a9e451aced358a2d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ignore: 0
 --- !u!1 &3383156456164522999
 GameObject:
   m_ObjectHideFlags: 0
@@ -6631,7 +6655,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -6750,7 +6774,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -6995,6 +7019,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 17a68ff7ad1f9704a9e451aced358a2d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ignore: 0
 --- !u!1 &3691566411579560530
 GameObject:
   m_ObjectHideFlags: 0
@@ -7095,7 +7120,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -7232,6 +7257,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 17a68ff7ad1f9704a9e451aced358a2d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ignore: 0
 --- !u!1 &3798001467962328613
 GameObject:
   m_ObjectHideFlags: 0
@@ -7350,6 +7376,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 17a68ff7ad1f9704a9e451aced358a2d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ignore: 0
 --- !u!1 &3877657466267045945
 GameObject:
   m_ObjectHideFlags: 0
@@ -7450,7 +7477,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -7587,6 +7614,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 17a68ff7ad1f9704a9e451aced358a2d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ignore: 0
 --- !u!1 &3991301935193193150
 GameObject:
   m_ObjectHideFlags: 0
@@ -7705,6 +7733,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 17a68ff7ad1f9704a9e451aced358a2d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ignore: 0
 --- !u!1 &4001065811398952801
 GameObject:
   m_ObjectHideFlags: 0
@@ -7805,7 +7834,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -7924,7 +7953,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -8061,6 +8090,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 17a68ff7ad1f9704a9e451aced358a2d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ignore: 0
 --- !u!1 &4283650323069962809
 GameObject:
   m_ObjectHideFlags: 0
@@ -8161,7 +8191,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -8298,6 +8328,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 17a68ff7ad1f9704a9e451aced358a2d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ignore: 0
 --- !u!1 &4387336918626500707
 GameObject:
   m_ObjectHideFlags: 0
@@ -8416,6 +8447,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 17a68ff7ad1f9704a9e451aced358a2d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ignore: 0
 --- !u!1 &4512036603021490308
 GameObject:
   m_ObjectHideFlags: 0
@@ -8628,6 +8660,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 17a68ff7ad1f9704a9e451aced358a2d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ignore: 0
 --- !u!1 &4612592254328563365
 GameObject:
   m_ObjectHideFlags: 0
@@ -8746,6 +8779,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 17a68ff7ad1f9704a9e451aced358a2d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ignore: 0
 --- !u!1 &4748516761399804355
 GameObject:
   m_ObjectHideFlags: 0
@@ -8846,7 +8880,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -8965,7 +8999,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -9102,6 +9136,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 17a68ff7ad1f9704a9e451aced358a2d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ignore: 0
 --- !u!1 &5164618616263656851
 GameObject:
   m_ObjectHideFlags: 0
@@ -9220,6 +9255,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 17a68ff7ad1f9704a9e451aced358a2d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ignore: 0
 --- !u!1 &5242983243372940384
 GameObject:
   m_ObjectHideFlags: 0
@@ -9320,7 +9356,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -9547,7 +9583,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -9684,6 +9720,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 17a68ff7ad1f9704a9e451aced358a2d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ignore: 0
 --- !u!1 &5433089032488352241
 GameObject:
   m_ObjectHideFlags: 0
@@ -9892,7 +9929,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -10011,7 +10048,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -10148,6 +10185,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 17a68ff7ad1f9704a9e451aced358a2d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ignore: 0
 --- !u!1 &5674129608171916227
 GameObject:
   m_ObjectHideFlags: 0
@@ -10248,7 +10286,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -10367,7 +10405,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -10504,6 +10542,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 17a68ff7ad1f9704a9e451aced358a2d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ignore: 0
 --- !u!1 &5830314604946011991
 GameObject:
   m_ObjectHideFlags: 0
@@ -10604,7 +10643,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -10741,6 +10780,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 17a68ff7ad1f9704a9e451aced358a2d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ignore: 0
 --- !u!1 &5975686449083933904
 GameObject:
   m_ObjectHideFlags: 0
@@ -10841,7 +10881,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -10978,6 +11018,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 17a68ff7ad1f9704a9e451aced358a2d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ignore: 0
 --- !u!1 &6072641140880999367
 GameObject:
   m_ObjectHideFlags: 0
@@ -11078,7 +11119,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -11305,7 +11346,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -11442,6 +11483,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 17a68ff7ad1f9704a9e451aced358a2d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ignore: 0
 --- !u!1 &6277576697523721548
 GameObject:
   m_ObjectHideFlags: 0
@@ -11594,7 +11636,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -11713,7 +11755,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -11832,7 +11874,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -11951,7 +11993,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -12088,6 +12130,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 17a68ff7ad1f9704a9e451aced358a2d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ignore: 0
 --- !u!1 &6435418803423764951
 GameObject:
   m_ObjectHideFlags: 0
@@ -12188,7 +12231,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -12325,6 +12368,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 17a68ff7ad1f9704a9e451aced358a2d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ignore: 0
 --- !u!1 &6603855148998772123
 GameObject:
   m_ObjectHideFlags: 0
@@ -12443,6 +12487,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 17a68ff7ad1f9704a9e451aced358a2d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ignore: 0
 --- !u!1 &6611356882767913422
 GameObject:
   m_ObjectHideFlags: 0
@@ -12667,6 +12712,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 17a68ff7ad1f9704a9e451aced358a2d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ignore: 0
 --- !u!1 &6724555462199377174
 GameObject:
   m_ObjectHideFlags: 0
@@ -12767,7 +12813,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -12904,6 +12950,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 17a68ff7ad1f9704a9e451aced358a2d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ignore: 0
 --- !u!1 &6887336032932824794
 GameObject:
   m_ObjectHideFlags: 0
@@ -13004,7 +13051,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -13141,6 +13188,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 17a68ff7ad1f9704a9e451aced358a2d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ignore: 0
 --- !u!1 &6904002970213617268
 GameObject:
   m_ObjectHideFlags: 0
@@ -13241,7 +13289,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -13360,7 +13408,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -13497,6 +13545,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 17a68ff7ad1f9704a9e451aced358a2d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ignore: 0
 --- !u!1 &7048177975666110462
 GameObject:
   m_ObjectHideFlags: 0
@@ -13597,7 +13646,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -13842,6 +13891,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 17a68ff7ad1f9704a9e451aced358a2d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ignore: 0
 --- !u!1 &7128598933552483258
 GameObject:
   m_ObjectHideFlags: 0
@@ -13942,7 +13992,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -14061,7 +14111,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -14198,6 +14248,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 17a68ff7ad1f9704a9e451aced358a2d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ignore: 0
 --- !u!1 &7305962391466125009
 GameObject:
   m_ObjectHideFlags: 0
@@ -14298,7 +14349,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -14435,6 +14486,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 17a68ff7ad1f9704a9e451aced358a2d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ignore: 0
 --- !u!1 &7448595687076536114
 GameObject:
   m_ObjectHideFlags: 0
@@ -14553,6 +14605,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 17a68ff7ad1f9704a9e451aced358a2d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ignore: 0
 --- !u!1 &7450562122768358704
 GameObject:
   m_ObjectHideFlags: 0
@@ -14653,7 +14706,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -14790,6 +14843,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 17a68ff7ad1f9704a9e451aced358a2d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ignore: 0
 --- !u!1 &7619333858986483956
 GameObject:
   m_ObjectHideFlags: 0
@@ -15016,6 +15070,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 17a68ff7ad1f9704a9e451aced358a2d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ignore: 0
 --- !u!1 &7761018919879924190
 GameObject:
   m_ObjectHideFlags: 0
@@ -15134,6 +15189,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 17a68ff7ad1f9704a9e451aced358a2d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ignore: 0
 --- !u!1 &7799303956419571002
 GameObject:
   m_ObjectHideFlags: 0
@@ -15252,6 +15308,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 17a68ff7ad1f9704a9e451aced358a2d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ignore: 0
 --- !u!1 &7820421062935052802
 GameObject:
   m_ObjectHideFlags: 0
@@ -15370,6 +15427,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 17a68ff7ad1f9704a9e451aced358a2d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ignore: 0
 --- !u!1 &7841299666421674577
 GameObject:
   m_ObjectHideFlags: 0
@@ -15470,7 +15528,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -15589,7 +15647,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -15834,6 +15892,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 17a68ff7ad1f9704a9e451aced358a2d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ignore: 0
 --- !u!1 &8127868036510940398
 GameObject:
   m_ObjectHideFlags: 0
@@ -15934,7 +15993,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -16177,6 +16236,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 17a68ff7ad1f9704a9e451aced358a2d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ignore: 0
 --- !u!1 &8437223952821323776
 GameObject:
   m_ObjectHideFlags: 0
@@ -16403,6 +16463,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 17a68ff7ad1f9704a9e451aced358a2d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ignore: 0
 --- !u!1 &8610460215655202803
 GameObject:
   m_ObjectHideFlags: 0
@@ -16521,6 +16582,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 17a68ff7ad1f9704a9e451aced358a2d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ignore: 0
 --- !u!1 &8645658283927996901
 GameObject:
   m_ObjectHideFlags: 0
@@ -16621,7 +16683,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -16836,7 +16898,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -16973,6 +17035,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 17a68ff7ad1f9704a9e451aced358a2d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ignore: 0
 --- !u!1 &8821919485482329387
 GameObject:
   m_ObjectHideFlags: 0
@@ -17307,6 +17370,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 17a68ff7ad1f9704a9e451aced358a2d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ignore: 0
 --- !u!1 &8967028117121869458
 GameObject:
   m_ObjectHideFlags: 0
@@ -17425,6 +17489,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 17a68ff7ad1f9704a9e451aced358a2d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ignore: 0
 --- !u!1 &9058086307078200515
 GameObject:
   m_ObjectHideFlags: 0
@@ -17651,6 +17716,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 17a68ff7ad1f9704a9e451aced358a2d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ignore: 0
 --- !u!1 &9203937151021282216
 GameObject:
   m_ObjectHideFlags: 0
@@ -17751,7 +17817,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3

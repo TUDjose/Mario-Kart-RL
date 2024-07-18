@@ -7,7 +7,7 @@ using UnityEngine;
 
 public class KartController: MonoBehaviour
 {
-   [NonSerialized] public Rigidbody rb;
+   private Rigidbody? rb;
    
    [Header("Move")]
    public List<TrackCondition> trackSpeeds = new ()

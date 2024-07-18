@@ -1,15 +1,10 @@
 using System;
-using System.Collections;
 using System.Collections.Generic;
 using System.IO;
-using System.Reflection;
-using Unity.Collections;
 using UnityEngine;
 using Unity.MLAgents;
 using Unity.MLAgents.Actuators;
-using Unity.MLAgents.Policies;
 using Unity.MLAgents.Sensors;
-using Unity.VisualScripting;
 using Random = UnityEngine.Random;
 
 
@@ -29,6 +24,7 @@ public class KartAgent : Agent
     public int numCheckpoints = 0;
 
     public Lesson lesson;
+    public GameMode mode;
     
     protected override void Awake()
     {
@@ -187,11 +183,19 @@ public class KartAgent : Agent
             FinishedLap = completed,
             EpisodeLength = StepCount,
             Reward = GetCumulativeReward(),
-            CurrLesson = tm.Curriculum.IndexOf(lesson)
+            CurrLesson = tm.Curriculum.IndexOf(lesson),
+            Step = tm.envs * Academy.Instance.TotalStepCount
         };
         tm.StoreAnalytics(data);
         
         // end episode to reset agent
         EndEpisode();
     }
+}
+
+public enum GameMode
+{
+    Training,
+    Player,
+    Compete
 }
