@@ -73,7 +73,6 @@ public class KartController: MonoBehaviour
       else
       {
          float decceleration = 1.5f;
-         // if (Input.GetKey(KeyCode.Space)) decceleration = 5f;
          currentSpeed = Mathf.Lerp(currentSpeed, 0, Time.deltaTime * decceleration);
       }
       

@@ -1,12 +1,10 @@
 using System;
 using System.Collections.Generic;
-using System.Diagnostics;
 using System.Linq;
 using Unity.MLAgents;
 using Unity.MLAgents.Policies;
 using UnityEngine;
 using System.IO;
-using Debug = UnityEngine.Debug;
 
 
 public class TrainingManager : MonoBehaviour
@@ -42,14 +40,7 @@ public class TrainingManager : MonoBehaviour
 
         envs = environments.Length;
 
-        if (!ApplyCurriculum)
-        {
-            SetLesson(3);
-        }
-        else
-        {
-            SetLesson(0);
-        }
+        SetLesson(!ApplyCurriculum ? 3 : 0);
     }
 
     public void HeuristicsTesting()
@@ -84,25 +75,21 @@ public class TrainingManager : MonoBehaviour
         switch (stepRecorder)
         {
             case < (int)1e5:
-                // Debug.Log("lesson 0 - no braking");
+                // "lesson 0 - no braking"
                 SetLesson(0);  
                 break;
             case < (int)2e6 and > (int)1e5:
-                // Debug.Log("lesson 1 - allow braking");
+                // "lesson 1 - allow braking"
                 SetLesson(1);  
                 break;
             case < (int)5e6 and > (int)2e6:
-                // Debug.Log("lesson 2 - add reward for speed (must have completed most of track)");
+                // "lesson 2 - add reward for speed (must have completed most of track)"
                 SetLesson(2); 
                 break;
             case < (int)1.5e7 and > (int)2e6:
-                // Debug.Log("lesson 3 - add obstacles and offroad");
+                // "lesson 3 - add obstacles and off-road"
                 SetLesson(3);
                 break;
-            // case > (int)1.5e7:
-            //     // Debug.Log("lesson 4 - add boosts");
-            //     SetLesson(4);  
-            //     break;
         }
     }
 

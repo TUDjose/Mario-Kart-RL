@@ -11,7 +11,7 @@ mlagents-learn Assets/Configs/<config_file.yaml> --env=Builds --no_graphics
 ```
 
 Nonetheless, the Agent and Environment need to be created in Unity. A build for this environment can be downloaded in 
-the Releases page, where the final RL model can be found and run to observe how it performs in the training and 
+the [Releases](https://github.com/TUDjose/Mario-Kart-RL/releases/tag/mkrl) page, where the final RL model can be found and run to observe how it performs in the training and 
 testing tracks. Additionally, in this build, the tracks can also be manually attempted, to try to beat the agent's 
 lap time! 
 
