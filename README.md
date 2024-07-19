@@ -20,6 +20,8 @@ directory. Most important is the `KartAgent.cs` file, which contains the impleme
 the agent's observation/state and actions. `TrainingManager.cs` also contains the implementation of the curriculum 
 learning methods (splitting training into different phases/lessons).
 
+For the discussion and sensitivity analysis of the recorded results, please refer to the `MKRL/analysis.py` file. 
+
 ## Results
 This video (might take a few moments to load) shows the agent going through the training track in real-time (not sped 
 up). Such speeds and accuracy are quite hard to match by the human controller.
