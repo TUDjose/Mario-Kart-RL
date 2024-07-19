@@ -8,9 +8,20 @@ public class Leaderboard : MonoBehaviour
 {
     public TextMeshProUGUI[] lapTimes;
 
-    private void Start()
+    private void OnEnable()
     {
-        string[] times = File.ReadAllLines(Application.persistentDataPath + "/times.txt");
+        string path = Application.persistentDataPath + "/times.txt";
+        if (!File.Exists(path))
+        {
+            using (StreamWriter sw = File.CreateText(path))
+            {
+                sw.WriteLine("0");
+                sw.WriteLine("0");
+                sw.WriteLine("0");
+            }
+        }
+        
+        string[] times = File.ReadAllLines(path);
         for (int i = 0; i < 3; i++)
         {
             lapTimes[i].text = times[i];
