@@ -8,13 +8,10 @@ using UnityEngine.SceneManagement;
 
 public class LapTimer : MonoBehaviour
 {
-    private PlayerManager pm;
+    public PlayerManager pm;
     [SerializeField] private TextMeshProUGUI timer;
     [SerializeField] private CheckpointSingle chkpt;
     private float elapsedTime;
-    
-    private static string directory = "/SaveData/";
-    private static string fileName = "SaveGame.sav";
 
 
     private void Awake()
@@ -22,6 +19,8 @@ public class LapTimer : MonoBehaviour
         pm = GameObject.FindWithTag("PlayerManager").GetComponent<PlayerManager>();
         pm.OnStartTrack += StartLap;
         pm.OnEndTrack += StoreLeaderboardData;
+        
+        if(SceneManager.GetActiveScene().name == "1") Time.timeScale = 0;
     }
 
     private void Update()   
@@ -48,24 +47,9 @@ public class LapTimer : MonoBehaviour
 
     private void StoreLeaderboardData(object sender, EventArgs e)
     {
-        string dir = Application.persistentDataPath + directory;
-        if (!Directory.Exists(dir)) Directory.CreateDirectory(dir);
-
-        int idx = int.Parse(SceneManager.GetActiveScene().name);
-        switch (idx)
-        {
-            case 1 :
-                pm.Data.Time1 = timer.text;
-                break;
-            case 2:
-                pm.Data.Time2 = timer.text;
-                break;
-            case 3 :
-                pm.Data.Time3 = timer.text;
-                break;
-        }
-
-        string json = JsonConvert.SerializeObject(pm.Data);
-        File.AppendAllText(dir+fileName, json);
+        string dir = Application.persistentDataPath + "/times.txt";
+        string[] times = File.ReadAllLines(dir);
+        times[int.Parse(SceneManager.GetActiveScene().name) - 1] = timer.text;
+        File.WriteAllLines(dir, times);
     }
 }

@@ -30,8 +30,11 @@ public class TrainingManager : MonoBehaviour
 
     private void Start()
     {
-        path = "MKRL/Unity/analytics_" + DateTime.Now.ToString("yyyyMMdd_HHmmss") + ".txt";
-        File.WriteAllText(path, "");
+        if (recordAnalytics)
+        {
+            path = "MKRL/Unity/analytics_" + DateTime.Now.ToString("yyyyMMdd_HHmmss") + ".txt";
+            File.WriteAllText(path, "");
+        }
         
         agents = (KartAgent[])FindObjectsOfType(typeof(KartAgent));
         trackCheckpoints = (TrackCheckpoints[])FindObjectsOfType(typeof(TrackCheckpoints));
@@ -123,22 +126,6 @@ public class TrainingManager : MonoBehaviour
     public void StoreAnalytics(AnalyticsData data)
     {
         if(recordAnalytics) File.AppendAllText(path, data.ToCSV());
-    }
-    
-    public static void UpdateConfig(string filePath, string hyperparameter, float value)
-    {
-        string[] lines = File.ReadAllLines(filePath);
-
-        for (int i = 0; i < lines.Length; i++)
-        {
-            if (lines[i].Contains(hyperparameter))
-            {
-                string[] parts = lines[i].Split(':');
-                string key = parts[0];
-                lines[i] = key + ": " + value;
-            }
-        }
-        File.WriteAllLines(filePath, lines);
     }
 }
 

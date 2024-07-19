@@ -4,7 +4,7 @@ using UnityEngine;
 public class CheckpointSingle : MonoBehaviour
 {
     private TrackCheckpoints trackCheckpoints;
-    [SerializeField] private bool ignore;
+    public bool ignore;
     private PlayerManager pm;
 
     private void Awake()
@@ -14,22 +14,34 @@ public class CheckpointSingle : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject.TryGetComponent(out KartAgent kart))
+        KartAgent kart = other.gameObject.GetComponent<KartAgent>();
+        
+        if (kart.mode == GameMode.Training)
         {
             trackCheckpoints.KartThroughCheckpoint(this, other.transform);
+        }
 
-            if (pm != null && kart.mode == GameMode.Player && !ignore)
+        if (kart.mode == GameMode.Player && !ignore)
+        {
+            trackCheckpoints.KartThroughCheckpoint(this, other.transform);
+        }
+        
+        SetTiming(kart);
+    }
+
+    private void SetTiming(KartAgent kart)
+    {
+        if (pm != null && kart.mode == GameMode.Player && !ignore)
+        {
+            if (!pm.isTiming)
             {
-                if (!pm.isTiming)
-                {
-                    pm.InvokeStart();
-                    pm.isTiming = true;
-                }
-                else
-                {
-                    pm.InvokeEnd();
-                    pm.isTiming = false;
-                }
+                pm.InvokeStart();
+                pm.isTiming = true;
+            }
+            else
+            {
+                pm.InvokeEnd();
+                pm.isTiming = false;
             }
         }
     }

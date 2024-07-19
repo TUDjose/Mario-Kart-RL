@@ -21,6 +21,7 @@ the agent's observation/state and actions. `TrainingManager.cs` also contains th
 learning methods (splitting training into different phases/lessons).
 
 ## Results
-This video shows the agent going through the training track in real-time (not sped up). Such speeds and accuracy are 
-quite hard to match by the human controller.
+This video (might take a few moments to load) shows the agent going through the training track in real-time (not sped 
+up). Such speeds and accuracy are quite hard to match by the human controller.
+
 ![](https://github.com/TUDjose/Mario-Kart-RL/blob/main/Media/Training_track.gif)

@@ -16,9 +16,12 @@ public class StartMenu : MonoBehaviour
         
         tracks = new List<string>
         {
-            "Track1Human",
-            "Track2Human",
-            "Track3Human"
+            "2",
+            "3",
+            "1",
+            "SimpleTrack",
+            "HardTrack",
+            "Training"
         };
     }
 
@@ -63,6 +66,11 @@ public class StartMenu : MonoBehaviour
     {
         start.SetActive(false);
         leader.SetActive(true);
+    }
+
+    public void ClickExit()
+    {
+        Application.Quit();
     }
     
 }

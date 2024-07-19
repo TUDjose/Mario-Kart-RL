@@ -1,5 +1,6 @@
 ﻿using System;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PlayerManager : MonoBehaviour
 {
@@ -7,12 +8,8 @@ public class PlayerManager : MonoBehaviour
     public bool isTiming;
     public event EventHandler OnStartTrack;
     public event EventHandler OnEndTrack;
-    public SaveData Data;
 
-    private void Start()
-    {
-        Data = new SaveData("Anon", "00:00:000", "00:00:000","00:00:000");
-    }
+    private bool reload;
 
     public void InvokeStart()
     {
@@ -21,6 +18,26 @@ public class PlayerManager : MonoBehaviour
 
     public void InvokeEnd()
     {
-        // OnEndTrack?.Invoke(this, EventArgs.Empty);
+        OnEndTrack?.Invoke(this, EventArgs.Empty);
+    }
+
+    public void ClickReturn()
+    {
+        SceneManager.LoadScene("StartMenu");
+    }
+
+    public void ClickStart()
+    {
+        if (!reload)
+        {
+            Time.timeScale = 1;
+            reload = true;
+        }
+        else
+        {
+            Scene scene = SceneManager.GetActiveScene();
+            SceneManager.LoadScene(scene.name);
+            reload = false;
+        }
     }
 }

@@ -8,7 +8,7 @@ public class TrackCheckpoints : MonoBehaviour
 {
     private bool hide;
     public Transform checkpoints;
-    
+
     private List<CheckpointSingle> checkpointsList;
     public List<int> nextCheckpointIndexList;
     public List<Transform> kartTransformList;
@@ -26,14 +26,12 @@ public class TrackCheckpoints : MonoBehaviour
     private void Awake()
     {
         nextCheckpointIndexList = new List<int>();
-
         foreach (Transform kart in kartTransformList)
         {
             nextCheckpointIndexList.Add(0);
         }
         
         checkpointsList = new List<CheckpointSingle>();
-        
         foreach (Transform cp in checkpoints)
         {
             CheckpointSingle cpSingle = cp.GetComponent<CheckpointSingle>();
@@ -47,26 +45,46 @@ public class TrackCheckpoints : MonoBehaviour
         int idx = kartTransformList.IndexOf(kartTransform);
         int nextCheckpointIndex = nextCheckpointIndexList[idx];
         KartAgent agent = kartTransform.GetComponent<KartAgent>();
-        
-        if (nextCheckpointIndex == 0 && agent.numCheckpoints == checkpointsList.Count)
+
+        if (agent.mode == GameMode.Player)
         {
-            OnCorrectCheckpoint?.Invoke(this, new OnKartThroughCheckpointArgs
+            nextCheckpointIndexList[idx]++;
+            if (nextCheckpointIndexList[idx] > 1)
             {
-                kartT = kartTransform,
-                final = true,
-                numSteps = agent.StepCount
-            });
+                OnCorrectCheckpoint?.Invoke(this, new OnKartThroughCheckpointArgs
+                {
+                    kartT = kartTransform,
+                    final = true,
+                    numSteps = agent.StepCount
+                });
+                nextCheckpointIndexList[idx] = 0;
+            }
         }
-        else if (checkpointsList.IndexOf(cpSingle) == nextCheckpointIndex)
+        
+        
+        if(agent.mode == GameMode.Training)
         {
-            nextCheckpointIndexList[idx] = (nextCheckpointIndexList[idx] + 1) % checkpointsList.Count;
-            OnCorrectCheckpoint?.Invoke(this, new OnKartThroughCheckpointArgs{kartT = kartTransform});
+            if (nextCheckpointIndex == 0 && agent.numCheckpoints == checkpointsList.Count)  // final checkpoint
+            {
+                OnCorrectCheckpoint?.Invoke(this, new OnKartThroughCheckpointArgs
+                {
+                    kartT = kartTransform,
+                    final = true,
+                    numSteps = agent.StepCount
+                });
+            }
+            else if (checkpointsList.IndexOf(cpSingle) == nextCheckpointIndex)  // correct checkpoint
+            {
+                nextCheckpointIndexList[idx] = (nextCheckpointIndexList[idx] + 1) % checkpointsList.Count;
+                OnCorrectCheckpoint?.Invoke(this, new OnKartThroughCheckpointArgs{kartT = kartTransform});
+            }
+            else    // wrong checkpoint
+            {
+                OnWongCheckpoint?.Invoke(this, new OnKartThroughCheckpointArgs{kartT = kartTransform});
+                nextCheckpointIndexList[idx] = 0;
+            }
         }
-        else
-        {
-            OnWongCheckpoint?.Invoke(this, new OnKartThroughCheckpointArgs{kartT = kartTransform});
-            nextCheckpointIndexList[idx] = 0;
-        }
+        
     }
 
     public void ResetCheckpoints(Transform kart)
